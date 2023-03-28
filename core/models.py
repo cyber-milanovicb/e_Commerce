@@ -94,9 +94,13 @@ class Order(models.Model):
     ref_code = models.CharField(max_length=20, blank=True, null=True)
     items = models.ManyToManyField(OrderItem)
     start_date = models.DateTimeField(auto_now_add=True)
+
     ordered_date = models.DateTimeField()
+
     ordered = models.BooleanField(default=False)
+
     shipping_address = models.ForeignKey(
+
         'Address', related_name='shipping_address', on_delete=models.SET_NULL, blank=True, null=True)
     billing_address = models.ForeignKey(
         'Address', related_name='billing_address', on_delete=models.SET_NULL, blank=True, null=True)

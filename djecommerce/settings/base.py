@@ -13,7 +13,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'crispy_bootstrap4',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -35,6 +35,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'djecommerce.urls'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 TEMPLATES = [
     {

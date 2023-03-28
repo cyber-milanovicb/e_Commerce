@@ -1,0 +1,4 @@
+from emailsender.settings import BASE_DIR
+...
+msg.attach_file(os.path.join(BASE_DIR, 'static', 'file.file'))
+msg.send()
