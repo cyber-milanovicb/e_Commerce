@@ -27,7 +27,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    'django.middleware.common.CommonMiddleware'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -55,6 +55,10 @@ TEMPLATES = [
         },
     },
 ]
+
+DEBUG = True
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://8c02-46-40-56-130.eu.ngrok.io']
 
 WSGI_APPLICATION = 'djecommerce.wsgi.application'
 
